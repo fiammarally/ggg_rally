@@ -21,13 +21,7 @@ module.exports = {
     siteUrl: `https://www.gatsbyjs.org`,
     description: `Blazing fast modern site generator for React`,
   },
-  plugins: [{
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/posts`,
-        name: "markdown-pages",
-      },
-    },
+  plugins: [
     `gatsby-transformer-remark`,
   ],
 }
