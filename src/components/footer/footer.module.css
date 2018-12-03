@@ -1,0 +1,37 @@
+.footer {
+  background: #ccc;
+  height: 100%;
+  color: #232B34;
+  /* margin-top: 150px; */
+}
+
+.footer p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #232B34;
+}
+
+.box {
+  margin-top: 40px;
+}
+
+.info {
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.social p {
+  text-align: center;
+}
+
+.socialImage {
+  width: 50px;
+  margin: 15px;
+}

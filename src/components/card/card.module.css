@@ -1,0 +1,49 @@
+.card {
+  margin: 20px;
+  padding-bottom: 20px;
+  transition: box-shadow .2s;
+  cursor: pointer;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.card h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 21px;
+  text-rendering: optimizeLegibility;
+  padding: 20px 20px 0px 20px;
+  letter-spacing: -0.07px;
+  line-height: 33.18px;
+  text-align: left;
+  color: #232B34;
+  overflow: hidden;
+}
+
+.card a {
+  text-decoration: none;
+  color: #232B34;
+}
+
+.card a:hover {
+  text-decoration: none;
+}
+
+.card a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+.postImage {
+  box-shadow: #ccc 0px 10px 40px 0px, #ccc 0px 2px 9px 0px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 7px;
+  transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.postImage:hover {
+  box-shadow: 0px 20px 50px #ccc, #ccc 0px 20px 30px 0px;
+}

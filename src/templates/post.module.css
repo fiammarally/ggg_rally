@@ -1,0 +1,123 @@
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 48px;
+  color: #232B34;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.post {
+  /* position: absolute; */
+  margin: auto;
+  /* min-height: 100vh; */
+  text-align: left;
+  padding: 0 10px;
+  max-width: 740px;
+}
+
+iframe {
+  margin-top: 30px;
+  width: 100%!important;
+  min-height: 300px!important;
+  border: 7px solid #333;
+  border-radius: 7px;
+  box-shadow: rgba(62, 57, 107, 0.2) 0px 10px 40px 0px, rgba(62, 57, 107, 0.2) 0px 2px 9px 0px;
+}
+
+.mainImage {
+  display: block;
+  margin: auto;
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: rgba(62, 57, 107, 0.2) 0px 10px 40px 0px, rgba(62, 57, 107, 0.2) 0px 2px 9px 0px;
+  margin-bottom: 60px;
+}
+
+.gallery {
+  margin-bottom: 60px;
+}
+
+.gallery img {
+  border-radius: 7px;
+  transition: box-shadow .4s;
+}
+
+.gallery img:hover {
+  -moz-box-shadow: 0 5px 20px #888;
+  -webkit-box-shadow: 0 5px 20px #888;
+  box-shadow: 0 5px 20px #888;  
+}
+
+.content {
+  margin-bottom: 150px;
+}
+
+.content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #232B34;
+  padding-top: 20px;
+}
+
+.content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  color: #333;
+  text-align: left;
+}
+
+.content em {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  font-style: italic; 
+  color: #888;
+}
+
+.content i {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  font-style: italic; 
+  color: #888;
+}
+
+.content blockquote {
+  /* border-left: 7px solid ; */
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+.content blockquote p {
+  color: #888;
+  font-style: italic;
+}
+
+.content blockquote:before {
+  color: #999;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.content em em, .content i i {
+  color: #333!important;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 38px;
+    padding: 20px 0 20px 0;
+  }
+
+  .post {
+    margin-top: 50px;
+  }
+  
+  .post img {
+    max-height: 200px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,15 @@
+headless contentful
+
+- user: lucagez@gmail.com	
+- pass: !luicospacca!1
+
+tree
+
+- prodotti
+  - vino
+  - (...)
+- post
+  - 1
+    - title
+    - content
+  - (...)
