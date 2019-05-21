@@ -48,7 +48,7 @@ exports.createPages = ({
         response.items.forEach((node) => {
           if (node.fields.url && node.fields.content) {
             const html = documentToHtmlString(node.fields.content);
-            console.log(node);
+            // console.log(node);
             createPage({
               titolo: node.fields.titolo,
               path: `/blog/${node.fields.url}`,

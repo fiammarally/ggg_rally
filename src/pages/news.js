@@ -27,6 +27,10 @@ const blog = ({ data }) => {
     );
   });
 
+  if (typeof window !== 'undefined') {
+    window.document.tile = 'News | Gianluca Ferretti'
+  }
+
   return (
     <Layout>
       <div className="container news">

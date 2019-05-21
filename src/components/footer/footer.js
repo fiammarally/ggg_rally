@@ -11,7 +11,7 @@ const Footer = () => {
             <div className={`${style.box}`}>
               <div className={style.info}>
                 <p>Gianluca Ferretti</p>
-                <p><strong><a href="/privacy">g.ferre96@gmail.com</a></strong></p>
+                <p><strong><a to="mailto:g.ferre96@gmail.com">g.ferre96@gmail.com</a></strong></p>
               </div>
               <div className={style.social}>
                 <a href="https://www.facebook.com/gianluca.ferretti.507"><img className={`${style.socialImage}`} src="https://image.flaticon.com/icons/svg/733/733603.svg" alt="facebook" /></a>

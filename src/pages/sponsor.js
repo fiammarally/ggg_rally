@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby";
 
 import style from "./css/sponsor.module.css"
 import Layout from "../components/layout/layout"
@@ -15,6 +16,7 @@ class foto extends React.Component {
     }
   }
   componentDidMount() {
+    document.title = 'Sponsors | Gianluca Ferretti'
     const client = contentful.createClient({
       space: '4hdczd41xjc6',
       accessToken: 'c00c5d9432352d25f5061332e3777f2932d20f1244fd89a0940a1ec15422b75c'
@@ -34,7 +36,10 @@ class foto extends React.Component {
         });
         return temp;
       })
-      .then((images) => this.setState({images: images}))
+      .then((images) => {
+        // console.log(images)
+        this.setState({ images: images.filter(e => e.name !== 'G. M. Luico Enologia') })
+      })
       .catch(console.error);
   }
   render() {
@@ -46,16 +51,16 @@ class foto extends React.Component {
             <Navbar />
             <h1><span className={`${style.highlight}`}>Sponsor</span></h1>
             <div className="row">
-              { images ? Object.keys(images).map((e, i) => {
+              {images ? Object.keys(images).map((e, i) => {
                 return (
                   <div className={`col ${style.sponsor}`} key={i}>
                     <a href={images[e].link} target="_blank">
-                      <img src={images[e].image} alt=""/>
+                      <img src={images[e].image} alt="" />
                       <h2>{images[e].name}</h2>
                     </a>
                   </div>
                 )
-              }) : null }
+              }) : null}
             </div>
           </div>
         </div>

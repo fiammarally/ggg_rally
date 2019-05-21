@@ -1,25 +1,26 @@
 import React from "react";
+import { Link } from "gatsby";
 import { slide as Menu } from "react-burger-menu";
 
 const Burger = (props) => {
   return (
     // Pass on our props
     <Menu {...props}>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
         Home
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/burgers">
+      <Link className="menu-item" to="/burgers">
         Burgers
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/pizzas">
+      <Link className="menu-item" to="/pizzas">
         Pizzas
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/desserts">
+      <Link className="menu-item" to="/desserts">
         Desserts
-      </a>
+      </Link>
     </Menu>
   );
 };

@@ -6,6 +6,9 @@ import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 
 class contatti extends React.Component {
+  componentDidMount() {
+    document.title = 'Contatti | Gianluca Ferretti'
+  }
 
   render() {
     return (

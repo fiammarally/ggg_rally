@@ -10,6 +10,9 @@ import Footer from "../components/footer/footer"
 import Car from "../components/car/car"
 
 class index extends React.Component {
+  componentDidMount() {
+    document.title = 'Home | Gianluca Ferretti'
+  }
 
   render() {
     return (

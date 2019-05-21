@@ -9,7 +9,7 @@ import Navbar from "../components/navbar/navbar"
 import style from "./post.module.css"
 
 
-class post extends React.Component {
+class Post extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,7 +52,11 @@ class post extends React.Component {
       temp.height = 3;
       return temp;
     }) : null;
-    console.log(images);
+
+    if (typeof window !== 'undefined') {
+      window.document.title = post.context.titolo;
+    }
+
     return (
       <Layout>
         <Navbar />
@@ -85,7 +89,7 @@ class post extends React.Component {
   }
 }
 
-export default post;
+export default Post;
 
 export const query = graphql`
   query($slug: String!) {

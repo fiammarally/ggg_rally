@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby";
 
 import Burger from "./burger"
 // import Burger from "../burger/burger"
@@ -38,10 +39,10 @@ class Navbar extends React.Component {
     return (
       <div id="bar" className={`container ${style.position}`}>
         <div className={`row hidden-xs hidden-sm`}>
-          <div className={`col-md-2 text-center ${style.menuItem}`}><a href="/">HOME</a></div>
-          <div className={`col-md-2 text-center ${style.menuItem}`}><a href="/news">NEWS</a></div>
-          <div className={`col-md-2 text-center ${style.menuItem}`}><a href="/sponsor">SPONSOR</a></div>
-          <div className={`col-md-2 text-center offset-4 ${style.menuItem}`}><a href="/contatti" className={style.contacts}>CONTATTI</a></div>
+          <div className={`col-md-2 text-center ${style.menuItem}`}><Link to="/">HOME</Link></div>
+          <div className={`col-md-2 text-center ${style.menuItem}`}><Link to="/news">NEWS</Link></div>
+          <div className={`col-md-2 text-center ${style.menuItem}`}><Link to="/sponsor">SPONSOR</Link></div>
+          <div className={`col-md-2 text-center offset-4 ${style.menuItem}`}><Link to="/contatti" className={style.contacts}>CONTATTI</Link></div>
         </div>
         <div className="row-fluid hidden-md hidden-lg hidden-xl">
           <div className={`${style.burger}`}>
@@ -50,10 +51,10 @@ class Navbar extends React.Component {
             </div>
             <div className={this.state.fill ? `${style.fill} ${style.filled}` : `${style.fill}`}>
               <ul className={this.state.fill ? `${style.appearMenu} ${style.visible}` : `${style.appearMenu}`} >
-                <li><a className={`${style.menuItem}`} href="/">HOME</a></li>
-                <li><a className={`${style.menuItem}`} href="/news">NEWS</a></li>
-                <li><a className={`${style.menuItem}`} href="/sponsor">SPONSOR</a></li>
-                <li><a className={`${style.menuItem}`} href="/contatti">CONTATTI</a></li>
+                <li><Link className={`${style.menuItem}`} to="/">HOME</Link></li>
+                <li><Link className={`${style.menuItem}`} to="/news">NEWS</Link></li>
+                <li><Link className={`${style.menuItem}`} to="/sponsor">SPONSOR</Link></li>
+                <li><Link className={`${style.menuItem}`} to="/contatti">CONTATTI</Link></li>
               </ul>
             </div>
           </div>
