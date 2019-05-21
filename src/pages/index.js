@@ -45,7 +45,7 @@ class index extends React.Component {
               <div className={`${style.secondTitle}`}>
                 <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
                   <h1>Su di me ⚡</h1>
-                  <p className="subtitle"><span>Sono Gianluca Ferretti, vivo a Genova dove sono nato nel 1996, studente universitario alla facoltà di Ingegneria Meccanica, pallanuotista ma con la grande passione delle auto da corsa praticamente dalla nascita.</span></p>
+                  <p className="subtitle"><span>Cresciuto a Genova, dove sono nato nel 1996, studente universitario alla facoltà di Ingegneria Meccanica, pallanuotista ma con la grande passione delle auto da corsa praticamente dalla nascita.</span></p>
                 </div>
               </div>
             </div>
